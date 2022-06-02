@@ -20,7 +20,7 @@ export default function CardContainer() {
           Word of the Dayyyyy
         </Typography>
         <Typography variant="body2">
-          well meaning and kindly..
+          well meaning and kindly...
         </Typography>
       </CardContent>
     </Card>
