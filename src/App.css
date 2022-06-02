@@ -30,12 +30,14 @@
 
 .particles-bg-canvas-self{
   background: #000;
+  height: 200px;
 }
 
 /* CSS */
 .btn-custom {
   font-size: 14px;
   font-weight: 200;
+  text-align: left;
   color: black;
   letter-spacing: 1px;
   padding: 13px 20px 13px;
@@ -66,10 +68,43 @@
   left: 0px;
 }
 
+.avatar {
+  border-radius: 50px;
+  width: 65px;
+  height: 65px;
+}
+
+.title-ndr {
+  font-size: 28px;
+  margin-top: -5px;
+  margin-bottom: 2px;
+  letter-spacing: 1px;
+}
+
+.caption-ndr {
+  font-size: 15px;
+}
+
+.icon-home {
+  width: 10px;
+  height: 10px;
+}
+
 @media (min-width: 768px) {
   .btn-custom {
     padding: 13px 50px 13px;
   }
+  .title-ndr {
+    font-size: 45px;
+  }
+  .caption-ndr {
+    font-size: 20px;
+  }
+  .avatar {
+    width: 95px;
+    height: 95px;
+  }
+  
 }
 
 @keyframes App-logo-spin {
