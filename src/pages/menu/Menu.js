@@ -1,4 +1,4 @@
-import * as React from 'react';
+import { useState } from 'react';
 import PropTypes from 'prop-types';
 import { Container, Box, Tab, Typography, Tabs, Grid, Stack } from '@mui/material';
 import InstagramIcon from '@mui/icons-material/Instagram';
@@ -47,7 +47,7 @@ const settings = {
 };
 
 export default function BasicTabs() {
-  const [value, setValue] = React.useState(0);
+  const [value, setValue] = useState(0);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
