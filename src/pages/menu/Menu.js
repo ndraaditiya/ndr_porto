@@ -93,7 +93,7 @@ export default function BasicTabs() {
         </TabPanel>
         <TabPanel value={value} index={2}>
           <Box p={2}>
-            <Slider {...settings} autoplay>
+            <Slider {...settings} autoplay autoplaySpeed={2600}>
               <div>
                 <CardContainer />
               </div>
