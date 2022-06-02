@@ -17,7 +17,7 @@ export default function CardContainer() {
       />
       <CardContent>
         <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-          Word of the Day
+          Word of the Dayyyyy
         </Typography>
         <Typography variant="body2">
           well meaning and kindly..
