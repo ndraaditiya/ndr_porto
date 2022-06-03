@@ -1,16 +1,23 @@
-.App {
-  text-align: center;
+*::selection{
+  color: #fff000;
+  background-color: #282c34;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+::-webkit-scrollbar {
+  width: 0px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+::-webkit-scrollbar-thumb {
+  background: #fff000; 
+  border-radius: 10px;
+}
+
+
+a {
+  color: black;
+  text-decoration: none;
+  text-transform: none;
+  background-color: none;
 }
 
 .App-header {
@@ -24,16 +31,20 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
 .particles-bg-canvas-self{
   background: #000;
-  height: 200px;
 }
 
-/* CSS */
+.contact {
+  padding-left: 5px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.contact-details {
+  padding-left: 5px;
+}
+
 .btn-custom {
   font-size: 14px;
   font-weight: 200;
@@ -43,11 +54,11 @@
   padding: 13px 20px 13px;
   outline: 0;
   border: 1px solid black;
-  cursor: pointer;
+  cursor: text;
   position: relative;
   background-color: rgba(0, 0, 0, 0);
-  user-select: none;
-  -webkit-user-select: none;
+  /* user-select: none; */
+  /* -webkit-user-select: none; */
   touch-action: manipulation;
 }
 
@@ -72,6 +83,7 @@
   border-radius: 50px;
   width: 65px;
   height: 65px;
+  cursor: pointer;
 }
 
 .title-ndr {
@@ -90,6 +102,10 @@
   height: 10px;
 }
 
+.icon-home:hover {
+  color: grey;
+}
+
 @media (min-width: 768px) {
   .btn-custom {
     padding: 13px 50px 13px;
@@ -105,13 +121,4 @@
     height: 95px;
   }
   
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

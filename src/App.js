@@ -1,20 +1,26 @@
-import React from "react";
-import "./App.css";
+import React from "react"
+import "./App.css"
 import ParticlesBg from "particles-bg"
-import Header from "./pages/header/Header";
-import Menu from "./pages/menu/Menu"; 
-import Home from "./pages/home/Home"; 
+import Content from "./pages/content/Content"
+import Header from "./pages/header/Header"
 
 const App = () => {
   return (
-    <div className="App">
-      <ParticlesBg type="circle" bg={true} />
-      <div style={{color: '#fff'}}>
-        {/* <Header /> */}
-        <Home />
-        <Menu />
+    <>
+      <ParticlesBg type="circle"
+        bg={{
+          position: "absolute",
+          zIndex: -1,
+          top: 0,
+          left: 0,
+          minHeight: 675
+        }}
+      />
+      <div style={{ color: '#fff' }}>
+        <Header />
+        <Content />
       </div>
-    </div>
+    </>
   )
 }
 

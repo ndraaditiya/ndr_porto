@@ -1,0 +1,108 @@
+import InstagramIcon from '@mui/icons-material/Instagram'
+import GitHubIcon from '@mui/icons-material/GitHub'
+import EmailIcon from '@mui/icons-material/Email'
+
+const data = 
+[
+  {
+    project: [
+      {
+        id: 1,
+        versi: 'Web App',
+        software: 'React, Express, Material-UI',
+        title: 'Sistem Informasi Manajemen Aset',
+        picture: 'project1.jpeg',
+        url: 'https://youtu.be/IxVrBHSOTY4'
+      },
+      {
+        id: 2,
+        versi: 'Android App',
+        software: 'React Native, Express, Expo',
+        title: 'ruangbaca',
+        picture: 'project2.jpg',
+        url: 'https://youtu.be/dmO0oKgnLu4'
+      },
+      {
+        id: 3,
+        versi: 'Android App',
+        software: 'Flutter, NESWAPI',
+        title: 'ruangbaca',
+        picture: 'project3.jpg',
+        url: 'https://youtu.be/3_3-JujT30A'
+      },
+      {
+        id: 4,
+        versi: 'Desktop App',
+        software: 'VB.Net, SQL Server',
+        title: 'Decision Support System',
+        picture: 'project4.jpg',
+        url: 'https://youtu.be/A2h4n4ye_Zo'
+      },
+      {
+        id: 5,
+        versi: 'Microcontroller',
+        software: 'Arduino',
+        title: 'Arduino Uno',
+        picture: 'project5.jpg',
+        url: 'https://youtube.com/playlist?list=PL7tAtlCa5ppqZ0c-tZzAtuFch3OOzMhSc'
+      },
+    ],
+    book:[
+      {
+        id: 1,
+        title: 'Tentang Kita yang Erat namun tak Terikat',
+        base: 'Novel',
+        picture: 'book1.jpg',
+        url: 'https://www.wattpad.com/story/227677204-tentang-kita-yang-erat-namun-tak-terikat'
+      },
+      {
+        id: 2,
+        title: 'Terangkai Kala Arunika Menampakkan Kirananya',
+        base: 'Sajak',
+        picture: 'book2.jpg',
+        url: 'https://www.wattpad.com/story/243317521-terangkai-kala-arunika-menampakkan-kirananya'
+      }
+    ],
+    youtube: [
+      {
+        id: 1,
+        title: 'Andra Aditiya',
+        caption: 'This is my main YouTube Channel',
+        picture: 'youtube1.jpg',
+        url: 'https://www.youtube.com/channel/UCUbpXnPEpFJ0I7OloQ4BX1A'
+      },
+      {
+        id: 2,
+        title: 'SpotKita',
+        caption: 'I have a segment called sudutRenungan in this my partner YouTube',
+        picture: 'youtube2.jpg',
+        url: 'https://www.youtube.com/c/SpotKita'
+      }
+    ],
+    contactDetails: [
+      {
+        id: 1,
+        caption: 'ndraaditiya',
+        title: 'Go to Instagram',
+        icon: <InstagramIcon className="icon-home" />,
+        url: 'https://www.instagram.com/ndraaditiya/',
+      },
+      {
+        id: 2,
+        caption: 'ndraaditiya',
+        title: 'Go to GitHub',
+        icon: <GitHubIcon className="icon-home" />,
+        url: 'https://github.com/ndraaditiya'
+      },
+      {
+        id: 3,
+        caption: 'ndraaditiya@gmail.com',
+        title: 'Email to me',
+        icon: <EmailIcon className="icon-home" />,
+        url: 'mailto:ndraaditiya@gmail.com'
+      }
+    ]
+  }
+]
+
+export { data }
