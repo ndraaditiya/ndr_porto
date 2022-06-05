@@ -102,7 +102,7 @@ const Content = () => {
                       <CardContainer
                         key={p?.id}
                         picture={p?.picture}
-                        width={250}
+                        width={225}
                         height={120}
                         link={p?.url}
                       >
