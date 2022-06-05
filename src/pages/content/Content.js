@@ -8,8 +8,8 @@ import { data } from '../../data'
 
 const Content = () => {
   const height = window.innerHeight
-  const styleGridCard = { flexWrap: 'wrap', display: 'flex' }
-  const styleBoxCard = { height: height-255, width: '100%', overflow: 'auto', paddingBottom: 3 }
+  const styleGridCard = { flexWrap: 'wrap', display: 'flex', paddingBottom: 3 }
+  const styleBoxCard = { height: height-255, width: '100%', overflow: 'auto' }
   const styleFontSoftware = { fonWeight: 'bold', my: 1, color: '#ffffff' }
   const styleFontTitleProject = { fontWeight: 'bold', fontSize: 15, color: '#ffffff' }
 
