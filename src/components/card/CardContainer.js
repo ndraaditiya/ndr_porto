@@ -23,7 +23,7 @@ const CardContainer = ({
   return (
     <>
       <Tooltip title={title ?? "Go to Website"} placement='top'>
-        <Card sx={{ width, ...style }}>
+        <Card sx={{ maxWidth: width, ...style }}>
           <a href={link} target='_blank' rel="noreferrer">
             <CardMedia
               component="img"
