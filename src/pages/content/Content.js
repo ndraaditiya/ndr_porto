@@ -10,8 +10,8 @@ const Content = () => {
   const height = window.innerHeight
   const styleGridCard = { flexWrap: 'wrap', display: 'flex' }
   const styleBoxCard = { height: height-255, width: '100%', overflow: 'auto' }
-  const styleFontSoftware = { fonWeight: 'bold', color: '#5a5a5a', my: 1 }
-  const styleFontTitleProject = { fontWeight: 'bold', fontSize: 15 }
+  const styleFontSoftware = { fonWeight: 'bold', my: 1, color: '#ffffff' }
+  const styleFontTitleProject = { fontWeight: 'bold', fontSize: 15, color: '#ffffff' }
 
   const [value, setValue] = useState(0);
 
@@ -42,13 +42,13 @@ const Content = () => {
           </Container>
           <TabPanel value={value} index={0}>
             <Box mt={1}>
-              <div className='btn-custom'>
+              <div className='glass-card'>
                 <Motion>
-                  <p style={{ fontSize: 16.5, marginTop: 0 }}>
+                  <p style={{ fontSize: 16.5 }}>
                     Hi, I am a Full Stack JavaScript Developer. In development an app, I usually use React, 
                     React Native, NodeJs, Express, Sequelize and Material-UI.
                   </p>
-                  <p style={{fontSize: 14  }}>
+                  <p style={{ fontSize: 14  }}>
                     From 2017 - Present, I work at PT. Medika Antapani as a software  developer,
                     a company who engaged in the health sector.
                   </p>
@@ -56,11 +56,11 @@ const Content = () => {
                   <div className="contact">
                     {data[0]?.contactDetails && data[0]?.contactDetails.map((c) =>
                       <Stack direction="row" alignItems="center" key={c?.id}>
-                        <a href={c?.url} target='_blank'>
+                        <a href={c?.url} target='_blank' rel="noreferrer">
                           {c?.icon}
                         </a>
                         <Tooltip title={c?.title} arrow placement="top">
-                          <a href={c?.url} target='_blank'>
+                          <a href={c?.url} target='_blank' rel="noreferrer">
                             <span className="contact-details">{c?.caption}</span>
                           </a>
                         </Tooltip>
@@ -73,9 +73,9 @@ const Content = () => {
           </TabPanel>
           <TabPanel value={value} index={1}>
             <Box mt={1}>
-              <div className="btn-custom">
+              <div className="glass-card">
                 <Motion>
-                  <Typography variant="body1" sx={{ fontWeight: 'bold' }}>
+                  <Typography variant="body1" sx={{ fontWeight: 'bold', marginTop: 2 }}>
                     I live in Bandung, Indonesia. 
                   </Typography>
                   <p style={{ fontSize: 16 }}>
@@ -106,7 +106,7 @@ const Content = () => {
                         height={120}
                         link={p?.url}
                       >
-                        <Typography variant="body2" sx={{ mt: -1 }}>
+                        <Typography variant="body2" sx={{ mt: -1, color: '#ffffff' }}>
                           {p?.versi}
                         </Typography>
                         <Typography variant='caption' sx={{ ...styleFontSoftware }}>
@@ -135,10 +135,10 @@ const Content = () => {
                         height={170}
                         link={b?.url}
                       >
-                        <Typography variant="body2" sx={{ mb: 1 }}>
+                        <Typography variant="body2" sx={{ mb: 1, color: '#ffffff' }}>
                           {b?.base}
                         </Typography>
-                        <Typography variant="subtitle2" sx={{ fontWeight: 'bold' }}>
+                        <Typography variant="subtitle2" sx={{ fontWeight: 'bold', color: '#ffffff' }}>
                           {b?.title}
                         </Typography>
                       </CardContainer>
@@ -162,10 +162,10 @@ const Content = () => {
                         link={y?.url}
                         title={'Go to Channel'}
                       >
-                        <Typography variant="subtitle2" sx={{ fontWeight: 'bold' }}>
+                        <Typography variant="subtitle2" sx={{ fontWeight: 'bold', color: '#ffffff' }}>
                           {y?.title}
                         </Typography>
-                        <Typography variant="body2" sx={{ mb: 1 }}>
+                        <Typography variant="body2" sx={{ mb: 1, color: '#ffffff' }}>
                           {y?.caption}
                         </Typography>
                       </CardContainer>

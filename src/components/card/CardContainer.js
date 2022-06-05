@@ -1,5 +1,17 @@
 import { Card, CardMedia, CardContent, Tooltip } from '@mui/material'
 
+const style = {
+  color: '#ffffff',
+  cursor: 'pointer',
+  margin: 1,
+  borderRadius: '15px',
+  boxShadow: '10px 10px 20px #00000080',
+  borderTop:  '1px solid rgba(255, 255, 255, 0.5)',
+  borderLeft:  '1px solid rgba(255, 255, 255, 0.5)',
+  background: 'rgba(255, 255, 255, 0.1)',
+  backdropFilter: 'blur(10px)',
+}
+
 const CardContainer = ({ 
   picture,
   width,
@@ -11,8 +23,8 @@ const CardContainer = ({
   return (
     <>
       <Tooltip title={title ?? "Go to Website"} placement='top'>
-        <Card sx={{ width, margin: 0.8, cursor: 'pointer' }}>
-          <a href={link} target='_blank'>
+        <Card sx={{ width, ...style }}>
+          <a href={link} target='_blank' rel="noreferrer">
             <CardMedia
               component="img"
               height={height}
