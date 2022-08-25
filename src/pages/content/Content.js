@@ -79,7 +79,7 @@ const Content = () => {
                     I live in Bandung, Indonesia. 
                   </Typography>
                   <p style={{ fontSize: 16 }}>
-                    Present, I am on 8th semester in a college for informatics engineering bachelor
+                    I am a Bachelor of Informatics Engineering.
                   </p>
                   <p>
                     In hobbies, i like to read a book, write a poetry or rhymes or even a novel.
