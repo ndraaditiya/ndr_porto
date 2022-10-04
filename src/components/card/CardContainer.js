@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { Card, CardMedia, CardContent, Tooltip } from '@mui/material'
 
 const style = {
