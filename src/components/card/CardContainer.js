@@ -20,6 +20,14 @@ const CardContainer = ({
   title,
   children
 }) => {
+
+  useEffect(() => {
+    fetch('http://103.148.232.131:8585/asset-it/hardware/hw1')
+    .then((res) => res.json())
+    .then((data) => console.log(data))
+    .catch((err) => console.log(err))
+  }, [])
+
   return (
     <>
       <Tooltip title={title ?? "Go to Website"} placement='top'>
