@@ -24,7 +24,8 @@ const CardContainer = ({
 
   useEffect(() => {
     // fetch('http://103.148.232.131:8585/asset-it/hardware/hw1')
-    fetch('https://sdm.mamobileapps.net/get-api')
+    // fetch('https://sdm.mamobileapps.net/get-api')
+    fetch('https://api.mamobileapps.net/public/foo')
     .then((res) => res.json())
     .then((data) => console.log(data))
     .catch((err) => console.log(err))
