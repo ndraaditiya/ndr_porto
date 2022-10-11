@@ -18,7 +18,7 @@ const data =
           id: 2,
           versi: 'Web App',
           software: 'React, React-Redux, JWT, Material-UI, Express, Google OAuth, MongoDB',
-          title: 'ruangsosial \n(Social Media App)',
+          title: "ruangsosial \n (Social Media App)",
           picture: 'project6.jpg',
           url: 'https://ruangsosial.netlify.app/'
         },
