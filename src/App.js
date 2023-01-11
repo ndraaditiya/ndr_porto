@@ -13,8 +13,7 @@ const App = () => {
           zIndex: -1,
           top: 0,
           left: 0,
-          height: '100%',
-          minHeight: '100vh'
+          minHeight: 675
         }}
       />
       <div style={{ color: '#fff' }}>
