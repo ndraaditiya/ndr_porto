@@ -17,7 +17,7 @@ const Header = () => {
                 className="avatar"
                 initial={{ x: 0 }}
                 animate={{ x: move ? 100 : 0 }}
-                onClick={() => setMove(!move)}
+                onClick={() => setMove((prev) => !prev)}
               />
               <p className="title-ndr">Andra Aditiya</p>
               <Typed
