@@ -1,4 +1,4 @@
-*::selection{
+*::selection {
   color: #000;
   background-color: #fff000;
 }
@@ -31,7 +31,7 @@ a {
   color: white;
 }
 
-.particles-bg-canvas-self{
+.particles-bg-canvas-self {
   background: #282c34;
 }
 
@@ -64,7 +64,20 @@ a {
   font-size: 28px;
   margin-top: -5px;
   margin-bottom: 2px;
+  font-weight: 100;
   letter-spacing: 1px;
+  transition: all;
+  transition-duration: .35s;
+}
+
+.hovered-ndr {
+  color: #d7bbec;
+  font-weight: 900;
+}
+
+.hovered-ndr-adjacent {
+  color: #e8d3f5;
+  font-weight: 500;
 }
 
 .contact {
@@ -96,18 +109,22 @@ a {
   .btn-custom {
     padding: 13px 50px 13px;
   }
+
   .glass-card {
     padding: 16px 50px 16px;
   }
+
   .title-ndr {
     font-size: 45px;
   }
+
   .caption-ndr {
     font-size: 20px;
   }
+
   .avatar {
     width: 95px;
     height: 95px;
   }
-  
+
 }
