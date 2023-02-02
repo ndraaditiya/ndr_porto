@@ -16,6 +16,14 @@ const data =
           url: 'https://youtu.be/IxVrBHSOTY4'
         },
         {
+          id: 8,
+          versi: 'PWA',
+          software: 'React, Recoil, Material-UI',
+          title: 'Survei Kepuasan Pasien',
+          picture: 'project8.jpeg',
+          url: 'https://skp-for-porto.vercel.app/'
+        },
+        {
           id: 2,
           versi: 'Web App',
           software: 'React, React-Redux, JWT, Material-UI, Express, Google OAuth, MongoDB',
