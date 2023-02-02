@@ -10,7 +10,7 @@ const data =
         {
           id: 1,
           versi: 'Web App',
-          software: 'React, Express, Material-UI',
+          software: 'React, Express, Sequelize, JWT, Qr Code, Material-UI',
           title: 'Sistem Informasi Manajemen Aset',
           picture: 'project1.jpeg',
           url: 'https://youtu.be/IxVrBHSOTY4'
@@ -20,7 +20,7 @@ const data =
           versi: 'PWA',
           software: 'React, Recoil, Material-UI',
           title: 'Survei Kepuasan Pasien',
-          picture: 'project8.jpeg',
+          picture: 'project8.jpg',
           url: 'https://skp-for-porto.vercel.app/'
         },
         {
@@ -34,7 +34,7 @@ const data =
         {
           id: 3,
           versi: 'Web App',
-          software: 'Next, GraphQL, Hygraph, Tailwind',
+          software: 'Next Js, GraphQL, Hygraph, Tailwind',
           title: 'Web Blog',
           picture: 'project7.jpg',
           url: 'https://next-blog-git-main-ndraaditiya.vercel.app/'
