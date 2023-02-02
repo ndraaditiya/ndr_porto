@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import { Box, Container, Grid, } from "@mui/material"
-import Typed from 'react-typed'
+// import Typed from 'react-typed'
 import { motion } from "framer-motion"
 // import SimCardDownloadIcon from '@mui/icons-material/SimCardDownload';
 
@@ -8,8 +8,8 @@ const Header = () => {
   const [move, setMove] = useState(false)
 
   useEffect(() => {
-    if (window.innerWidth > 500) {
-      const phrase = 'Andra Aditiya'
+    if (window.innerWidth > 800) {
+      const phrase = 'just like to write, either code programming or rhymes'
       const targetEl = document.getElementById('ndr')
       phrase.split('').map((char, i) => {
         const el = document.createElement('span')
@@ -52,7 +52,7 @@ const Header = () => {
           })
       })
     } else {
-      document.getElementById('ndr').innerText = 'Andra Aditiya'
+      document.getElementById('ndr').innerText = 'just like to write, either code programming or rhymes'
     }
   }, [])
 
@@ -69,21 +69,22 @@ const Header = () => {
                 animate={{ x: move ? 100 : 0 }}
                 onClick={() => setMove((prev) => !prev)}
               />
-              <p className="title-ndr" id="ndr"></p>
+              <p className="title-ndr">Andra Aditiya</p>
               {/* <p> */}
               {/* <span className="title-ndr" id="ndr"></span> */}
               {/* <span>
                   <SimCardDownloadIcon />
                 </span> */}
               {/* </p> */}
-              <Typed
+              {/* <Typed
                 loop
                 typeSpeed={80}
                 className="caption-ndr"
                 strings={
                   ['just like to write, either code programming or rhymes']
                 }
-              />
+              /> */}
+              <p className="caption-ndr" id="ndr"></p>
             </Container>
           </Grid>
         </Grid>

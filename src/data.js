@@ -1,6 +1,7 @@
 import InstagramIcon from '@mui/icons-material/Instagram'
 import GitHubIcon from '@mui/icons-material/GitHub'
 import EmailIcon from '@mui/icons-material/Email'
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 const data =
   [
@@ -88,7 +89,7 @@ const data =
           url: 'https://www.youtube.com/channel/UCUbpXnPEpFJ0I7OloQ4BX1A'
         }
       ],
-      contactDetails: [
+      contactDetails1: [
         {
           id: 1,
           caption: 'ndraaditiya',
@@ -102,9 +103,18 @@ const data =
           title: 'Go to GitHub',
           icon: <GitHubIcon className="icon-home" />,
           url: 'https://github.com/ndraaditiya'
-        },
+        }
+      ],
+      contactDetails2: [
         {
           id: 3,
+          caption: 'Andra Adittiya',
+          title: 'See me on LinkedIn',
+          icon: <LinkedInIcon className="icon-home" />,
+          url: 'https://www.linkedin.com/in/andraaditiya/'
+        },
+        {
+          id: 4,
           caption: 'ndraaditiya@gmail.com',
           title: 'Email to me',
           icon: <EmailIcon className="icon-home" />,

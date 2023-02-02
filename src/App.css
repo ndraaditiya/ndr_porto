@@ -49,7 +49,7 @@ a {
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-left: 1px solid rgba(255, 255, 255, 0.5);
   background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(15px);
   overflow: hidden;
 }
 
@@ -71,12 +71,14 @@ a {
 }
 
 .hovered-ndr {
-  color: #d7bbec;
+  /* color: #d7bbec; */
+  color: #e8e337;
   font-weight: 900;
 }
 
 .hovered-ndr-adjacent {
-  color: #e8d3f5;
+  color: #f1ee8e;
+  /* color: #e8d3f5; */
   font-weight: 500;
 }
 
@@ -87,7 +89,10 @@ a {
 }
 
 .caption-ndr {
-  font-size: 15px;
+  font-size: 20px;
+  font-weight: 300;
+  margin: 5px 0;
+  user-select: none;
 }
 
 .contact-details {

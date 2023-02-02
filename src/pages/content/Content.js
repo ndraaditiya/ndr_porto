@@ -15,6 +15,8 @@ const Content = () => {
 
   const [value, setValue] = useState(0);
 
+  const experienceYears = new Date().getFullYear() - 2020
+
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
@@ -44,28 +46,46 @@ const Content = () => {
             <Box mt={1}>
               <div className='glass-card'>
                 <Motion>
-                  <p style={{ fontSize: 16.5 }}>
-                    Hi, I am a Software Developer with more than 3 years experience.
+                  <p style={{ fontSize: 16.5, fontWeight: 'bold' }}>
+                    Hi, I am a Software Developer with more than {experienceYears} years experience.
                   </p>
                   <p style={{ fontSize: 14 }}>
-                    I Have strong knowledge about React Js, React Hooks, Material-UI, Sequelize, SQL Server and MySQL.
-                    Also have good knowledge about Vue Js, Express Js, React-Redux, Recoil, React-Query, RTK-Query, JSON
-                    Web Token (JWT), Progressive Web App (PWA), RESTful API, MongoDB, Framer Motion and Git/GitHub.
+                    I Have strong knowledge about React Js, React Hooks, MUI, Sequelize, SQL Server and MySQL.<br />
+                    Also have good knowledge about Vue Js, Express Js, React-Redux, Recoil, React-Query, RTK-Query, React Hook Form, JSON
+                    Web Token (JWT), Progressive Web App (PWA), RESTful API, Mongoose, Framer Motion, Git and GitHub/GitLab.
                   </p>
                   <p style={{ fontSize: 13, fontWeight: 'bold', marginBottom: 5 }}>You can also see me on:</p>
                   <div className="contact">
-                    {data[0]?.contactDetails && data[0]?.contactDetails.map((c) =>
-                      <Stack direction="row" alignItems="center" key={c?.id}>
-                        <a href={c?.url} target='_blank' rel="noreferrer">
-                          {c?.icon}
-                        </a>
-                        <Tooltip title={c?.title} arrow placement="top">
-                          <a href={c?.url} target='_blank' rel="noreferrer">
-                            <span className="contact-details">{c?.caption}</span>
-                          </a>
-                        </Tooltip>
-                      </Stack>
-                    )}
+                    <Grid container spacing={1} alignItems='center'>
+                      {data[0]?.contactDetails1 && data[0]?.contactDetails1.map((c, i) =>
+                        <Grid item xs={12} sm={6} key={c?.id} sx={{ marginBottom: { xs: '-5px' } }}>
+                          <Stack direction="row" alignItems="center">
+                            <a href={c?.url} target='_blank' rel="noreferrer">
+                              {c?.icon}
+                            </a>
+                            <Tooltip title={c?.title} arrow placement="top">
+                              <a href={c?.url} target='_blank' rel="noreferrer">
+                                <span className="contact-details">{c?.caption}</span>
+                              </a>
+                            </Tooltip>
+                          </Stack>
+                        </Grid>
+                      )}
+                      {data[0]?.contactDetails2 && data[0]?.contactDetails2.map((c, i) =>
+                        <Grid item xs={12} sm={6} key={c?.id} sx={{ marginBottom: { xs: i === 2 ? '-5px' : '' } }}>
+                          <Stack direction="row" alignItems="center">
+                            <a href={c?.url} target='_blank' rel="noreferrer">
+                              {c?.icon}
+                            </a>
+                            <Tooltip title={c?.title} arrow placement="top">
+                              <a href={c?.url} target='_blank' rel="noreferrer">
+                                <span className="contact-details">{c?.caption}</span>
+                              </a>
+                            </Tooltip>
+                          </Stack>
+                        </Grid>
+                      )}
+                    </Grid>
                   </div>
                 </Motion>
               </div>
