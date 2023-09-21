@@ -37,7 +37,7 @@ const data = [
         software: "Next Js, GraphQL, Hygraph, Tailwind",
         title: "Web Blog",
         picture: "project7.jpg",
-        url: "https://next-blog-git-main-ndraaditiya.vercel.app/",
+        url: "https://next-blog-ndr.netlify.app/",
       },
       {
         id: 4,
